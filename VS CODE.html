@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Status</title>
+</head>
+<body>
+    <script>
+    function compute() {    let sub1= parseFloat(document.getElementById("grd1").value);
+        let sub2= parseFloat(document.getElementById("grd2").value);
+        let sub3= parseFloat(document.getElementById("grd3").value);
+        let sub4= parseFloat(document.getElementById("grd4").value);
+
+        let avgGrd = (sub1 + sub2 + sub3) / 3;
+        
+        if(avgGrd >= 90) {
+            document.write("Average is: " + avgGrd + "<br>" + "Excellent");
+            
+    
+        } else if(avgGrd >= 75) {
+            document.write("Average is: " + avgGrd + "<br>" + "Above Satisfactory");   
+        
+        } else if(avgGrd >= 70) {
+            document.write("Average is: " + avgGrd + "<br>" + "Failing");
+        
+        } else {
+            document.write("Average is: " + avgGrd + "<br>" + "Failed");
+        }
+        
+    }
+    </script>
+</body>
+</html>
